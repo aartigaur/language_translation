@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi Language</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-mobile-light.min.css" rel="stylesheet" type="text/css"/>
+  
+  <script>
+    // i18n.init({lng: "en"}, function(err, t) {
+    //   setLan(t);
+    // });
+    // function changeLang() {
+    //   var e = document.getElementById("selLn");
+    //   var lng = e.options[e.selectedIndex].value;
+    //   console.log(lng);
+    //   i18n.setLng(lng, function(err, t) {
+    //     setLan(t);
+    //   });
+    //   $('#lbl').html("loaded Language package : /locales/" + lng + "/translation.json");
+    // }
+    // function setLan(t) {
+
+    //   $(".nav").i18n();
+    //   $(".content").i18n();
+    //   $(".foo").i18n();
+      // var appName = t("app.name");
+      // console.log("---->", appName);
+      // console.log(navigator.language);
+    // }
+
+  </script>
+</head>
+<body>
+
+  <div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item center full">
+      <h1 class="topcoat-navigation-bar__title">Multi Language Demo</h1>
+    </div>
+  </div>
+  Select Language
+  <select id="selLn" onchange="changeLang()" class="topcoat-select">
+    <option value="en">English</option>
+    <!-- <option value="fr">French</option> -->
+    <!-- <option value="sp">Spanish</option> -->
+    <!-- <option value="ar">Arabic</option> -->
+    <option value="hi">Hindi</option>
+    <!-- <option value="ml">Malayalam</option> -->
+    <option value="mr">Marathi</option>
+  </select>
+  <div class="topcoat-list">
+    <ul class="nav topcoat-list__container" >
+      <li class="topcoat-list__item"><a href="index.html" data-i18n="nav.home"></a></li>
+      <li class="topcoat-list__item"><a href="product.html" data-i18n="nav.products"></a></li>
+      <li class="topcoat-list__item"><a href="about.html" data-i18n="nav.services"></a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h1 data-i18n="content.welcome"></h1>
+  </div>
+
+  <div class="foo">
+    <p  data-i18n="foo.Samruddhi"></p>
+
+  </div>
+<!-- 
+  <div class="i18n" data-i18n="[html]content.body">
+    In Medellín they have many different types of <i>jugos naturales</i>&nbsp;(fruit juice) ... <br />
+    <br />
+    ...
+  </div> -->
+
+  <label id="lbl" style="font-style: italic;
+  padding-left: 12px;"></label>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.6.3/i18next-1.6.3.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

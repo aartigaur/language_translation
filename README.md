@@ -1,2 +1,4 @@
-# language_translation
-Display single website in various languages
+prdxn-dev-framework
+===================
+
+PRDXN's "starting package" used for development.

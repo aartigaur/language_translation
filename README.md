@@ -1,4 +1,3 @@
-prdxn-dev-framework
-===================
-
-PRDXN's "starting package" used for development.
+Description about Project
+==========================
+Creating Single Website in different languages.
